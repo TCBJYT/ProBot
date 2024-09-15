@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/css.css">
+	<title>ProBot.com</title>
+	<script type="text/javascript" src="js/jquery-3.6.0."></script>
+  <script type="text/javascript" src="js/js.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+<link rel="icon" type="image/x-icon" href="siteicon.ico">
+ <script src="js/float-panel.js"></script>
+</head>
+<body>	
+   <!--navbar start-->
+ <nav class="navbar shadow navbar-custom fixed-top navbar-expand-md ">
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" alt="ProBot" width="160" height="55">
+    </a>  
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+        <span class="navbar-toggler-icon text-dark"></span>
+    </button>
+    <div class="navbar-collapse collapse justify-content-center" id="navbar">
+        <ul class="navbar-nav">  
+            <li class="nav-item dropdown center">
+            </li>
+            <li class="nav-item  center"><a href="Index.html" class="nav-link text-light fw-bold">Tour</a></li>
+            <li class="nav-item  center"><a href="Pricing_Page.html" class="nav-link text-light fw-bold">Pricings</a></li>
+            <li class="nav-item center"><a href="Solutions_Page.html" class="nav-link text-light fw-bold">Solutions and Bots</a></li>
+            <li class="nav-item dropdown center">
+          <a href="Tour_Page.html" class="nav-link text-light dropdown-toggle fw-bold" d="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Features</a>
+          <ul class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+            <li class="nav-item dropdown center"><a class="dropdown-item text-dark fw-bold" href="#OverView">Features</a></li>
+            <li class="nav-item dropdown center"><a class="dropdown-item text-dark fw-bold" href="#Automated">Automated Greetings</a></li>
+            <li class="nav-item dropdown center"><a class="dropdown-item text-dark fw-bold" href="#Canned">Canned Response</a></li>
+            <li class="nav-item dropdown center"><a class="dropdown-item text-dark fw-bold" href="#Customization">Customization</a></li>
+          </ul>
+        </li>
+            <li class="nav-item center"><a href="Help_Page.html" class="nav-link text-light fw-bold">Help</a></li>
+            <li class="nav-item dropdown center">
+          </ul>
+        </li>
+        </ul>
+        <div class="navbar-collapse collapse d-flex justify-content-end">
+        <li class="nav-item button-colors fw-bold d-flex"><a href="#id01" class="nav-link text-dark " class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Loginmodal">Log-in/Register</a></li>
+      </div>
+    </div>
+   </nav>
+   <!--navbar end-->
+ <br>
+ <br>
+ <br>
+ <br>
+ <!--modal pick bot-->
+ <div class="modal fade animate slideIn" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header navbar-custom">
+        <p class="fs-100 text-light fw-bold">Pick A Bot to demo</p>
+        <button type="button" class="fs-100 btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="p-5 mb-4 bg-light rounded-3 shadow-sm">
+       <div class="row">
+    <div class="col-sm-9 col-md-6 col-lg-6" style="background-color:#002845;">
+      <br>
+      <h1 class=" fw-bold text-light col-sm-9">Business Bot</h1>
+        <p class="col-md-8 fs-4 text-light">Generic description here idk idk idk</p>
+        <button onclick="window.location.href='Downloads_Page(Business).html';" class="btn btn-primary text-center" type="button">Try it now!</button>
+        <br>
+        <br>
+    </div>
+    <div class="col-sm-9 col-md-6 col-lg-6" style="background-color:#ff9e75;">
+          <br>
+      <h1 class="fw-bold text-dark col-sm-9">Education Bot</h1>
+        <p class="col-md-8 fs-4 text-dark">Generic description here idk idk idk</p>
+        <button onclick="window.location.href='Downloads_Page(education).html';" class="btn btn-primary text-center" type="button">Try it now!</button>
+      <br>
+      <br>
+    </div>
+  </div>
+    </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+        </div>
+ </div>
+ <!--pick bot modal end-->
+ <!--body start-->
+ <!--modal log in start-->
+  <div class="modal fade animate slideIn" id="Loginmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header navbar-custom">
+        <p class="fs-100 text-light fw-bold">Log-In</p>
+        <button type="button" class="fs-100 btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="fs-7 center">Email</p>
+        <p class="fs-7 center">Password</p>
+         <div class="col text-center">
+        <button class="btn btn-primary btn-sm justify-content-center" type="button">Login</button>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Dont have an account?/Sign-Up</button>
+      </div>
+    </div>
+        </div>
+ </div>
+     <!--modal log-in ending-->
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+ <!--modal ending-->
+    <div class="container">
+    <div class="p-5 mb-4 bg-light rounded-3 shadow-sm slideanim" id="OverView">
+      <div class="container-fluid py-5 text-center">
+        <h1 class="display-5 fw-bold">Features</h1>
+        <p class="fs-4">Here are some of the features of our chat bot. Test and try our automated greeting, canned response, and customization features!</p>
+        <button class="btn btn-primary text-center" type="button">Try it now!</button>
+      </div>
+    </div>
+</div>
+    <br>
+    <br>
+    <div class="p-5 mb-4 bg-light rounded-3 shadow-sm slideanim" id="Automated">
+      <div class="container-fluid py-5">
+         <div class="row">
+    <div class="col">
+      <h1 class="display-5 fw-bold">Automated Greetings</h1>
+        <div class="col">
+      <p class="col-md-8 fs-4">Delight Visitors with Personalized chat greetings</p>
+      <ul class="bulletcolorleft">
+  <li>Greet visitors with personalized messages</li>
+  <li>Greetings, Announcements & Messages</li>
+  <li>Live Typing</li>
+  <li>Unlimited Domains</li>
+</ul>
+       <a href="#myModal" class="btn btn-primary justify-content-center slideanim" data-bs-toggle="modal" data-bs-target="#myModal">Get started</a>
+    </div>
+    </div>
+    <div class="col">
+<img src="img2.png" class="rounded float-end img-fluid img-thumbnail " style="height: 300px;" >
+    </div>
+  </div>
+       
+
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="p-5 mb-4 bg-light rounded-3 shadow-sm slideanim" id="Canned">
+      <div class="container-fluid py-5">
+<div class="container">
+  <div class="row">
+    <div class="col">
+     <img src="img3.png" class="rounded float-end img-fluid img-rounded" style="height: 300px;" >
+    </div>
+    <div class="col">
+       <h1 class="display-5 fw-bold">Canned Response</h1>
+        <div class="col">
+      <p class="col-md-8 fs-4">Use canned messages in live chat to accelerate support success</p>
+      <ul class="bulletcolorright">
+  <li>Answer FAQ's with canned responses</li>
+  <li>Deliver consistently delightful support</li>
+  <li>Avoid typos & grammatical errors</li>
+</ul>
+<a href="#myModal" class="btn btn-primary justify-content-center slideanim" data-bs-toggle="modal" data-bs-target="#myModal">Get started</a>
+    </div>
+  </div>
+  </div> 
+    </div>
+        
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="p-5 mb-4 bg-light rounded-3 shadow-sm slideanim" id="Customization">
+      <div class="container-fluid py-5">
+        <div class="container">
+  <div class="row">
+        <div class="col">
+                <h1 class="display-5 fw-bold">Customization</h1>
+      <p class="col-md-8 fs-4">Make chat window an integral part of your website using live chat customization</p>
+      <ul class="bulletcolorleft">
+  <li>Powerful chat window features</li>
+  <li>Add your own branding</li>
+  <li>Provide multilingual chat support</li>
+</ul>
+    </div>
+    <div class="col">
+      <img src="img4.png" class="rounded float-end img-fluid img-rounded" style="height: 300px;" >
+    </div>
+        </div>
+    </div>
+<a href="#myModal" class="btn btn-primary justify-content-center slideanim" data-bs-toggle="modal" data-bs-target="#myModal">Get started</a>
+      </div>
+    </div>
+    <br>
+    <br>
+    
+<!--body end-->
+<!--footer start-->
+  <footer class="p-5 mb-4 bg-light rounded-3 shadow-sm" id="Contact_Us">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Sections</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="Tour_Page.html" class="nav-link p-0 text-muted">Home</a></li>
+           <li class="nav-item mb-2"><a href="Features_Page.html" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="Pricing_Page.html" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="Help_Page.html" class="nav-link p-0 text-muted">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+         <!--empty for now-->
+        </form>
+      </div>
+<br>
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p class="text-dark">© 2022 ProBot, Inc. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+</footer>
+<!--footer end-->
+</body>
+</html>

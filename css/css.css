@@ -1,0 +1,141 @@
+.center {
+    text-align: center;
+}
+
+.navbar-custom {
+    background-color: #002845;
+}
+.navbar-nav > li{
+  margin-left:30px;
+  margin-right:30px;
+  border-width: 1px;
+  border-radius: 20px;
+}
+
+.img-thumbnail{
+display: block;
+  max-width: 10%;
+  height: auto;
+}
+ .logo-image{
+    width: 255px;
+    height: 255px;
+    overflow: hidden;
+    margin-top: -10px;
+}
+
+.button-colors
+{
+background-color: #00cfcc;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #00cfcc !important;
+}
+
+@media (min-width: 768px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateZ(1rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateZ(0rem);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateZ(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+/* Other styles for the page not related to the animated dropdown */
+
+body {
+  background: #007bff;
+  background: linear-gradient(to right, #002845, #00cfcc, #e898ac, #ff9e75);
+}
+
+.bulletcolorleft {
+    list-style: none;
+}
+
+.bulletcolorleft  li::before{
+   content: "•";
+  color: #e898ac;
+  font-weight: bold;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  font-size: 30px;
+}
+.bulletcolorright {
+    list-style: none;
+}
+
+.bulletcolorright  li::before{
+   content: "•";
+  color: #ff9e75;
+  font-weight: bold;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  font-size: 30px;
+}
+/*slide animation*/
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {                  
+    visibility: visible;                  
+    animation: slide 1s;
+}
+.slideanim::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
